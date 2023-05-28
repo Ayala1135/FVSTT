@@ -21,7 +21,7 @@ namespace WebApplication9.Controllers
         public IActionResult Index()
         {
             return View();
-        }
+        }//the running
 
         public IActionResult Privacy()
         {

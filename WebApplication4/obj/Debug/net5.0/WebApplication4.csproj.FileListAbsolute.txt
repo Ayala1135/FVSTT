@@ -38,3 +38,5 @@ C:\Users\IMOE001\Downloads\WebApplication4\WebApplication4\obj\Debug\net5.0\Razo
 C:\Users\IMOE001\Downloads\WebApplication4\WebApplication4\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\IMOE001\Downloads\WebApplication4\WebApplication4\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\IMOE001\Downloads\WebApplication4\WebApplication4\obj\Debug\net5.0\WebApplication4.RazorTargetAssemblyInfo.cs
+C:\Users\IMOE001\Downloads\WebApplication4\WebApplication4\bin\Debug\net5.0\WebApplication4.Views.pdb
+C:\Users\IMOE001\Downloads\WebApplication4\WebApplication4\obj\Debug\net5.0\WebApplication4.Views.pdb
