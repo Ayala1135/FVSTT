@@ -1,3 +1,4 @@
+using DAL;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -24,7 +25,10 @@ namespace WebApplication4
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            
+            services.AddScoped<ICityDAL, CityDAL>();///////////***********
+            services.AddScoped<IStreetDAL, StreetDAL>();
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

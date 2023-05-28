@@ -114,6 +114,12 @@ function OnClickSave() {
         }).done(function (Response) {
             debugger;
             if (Response.length > 0) {
+                const IdSelectCity = document.getElementById('IdSelectCity');
+                
+                    const OPTHION = document.createElement("option");
+                OPTHION.innerText = NameCityId;
+                    IdSelectCity.appendChild(OPTHION);
+                
                 alert("העיר נוספה בהצלחה")
             }
 

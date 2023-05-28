@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,8 +9,11 @@ namespace DAL.models
 {
     public class DB
     {
+        
         public static List<City> ListCities;
+       
         public static List<Street> ListStreets;
+     
         private static DB instance;
         private DB()
         {

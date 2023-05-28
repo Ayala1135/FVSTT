@@ -2,7 +2,25 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
+@*<div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>*@
+<div>
+    <select id="IdSelectCity" onchange="funcToShowAllStreetOfThisCity()">
+        <option>בחר עיר.......</option>
+    </select>
+    <select id="IdSelectStreet">
+        <option>בחר רחוב.......</option>
+    </select>
+    <!--<ul id="IdSelectStreet">
+        <li>בחר רחוב.......</li>
+    </ul>-->
+    <input type="text" placeholder="הכנס שם של עיר" id="NameCityId" />
+    <input type="text" placeholder="הכנס שם של רחוב" id="NameStreetId" />
+    <input type="button" value="שמירה" id="btnsave" onclick="OnClickSave()" />
+    <input type="button" value="ביטול" id="btncancle" onclick="OnClickCan()" />
+    <script src="script/JavaScriptjquery.js"></script>>
+    <script src="JavaScript.js"></script>
 </div>
+

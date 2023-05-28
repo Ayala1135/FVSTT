@@ -20,7 +20,7 @@ namespace DAL
         }
         public HashSet<Street> GetAllStreetsOfCityByIdCity(int _idCity)
         {
-            //בדיקת תקינות שאכן יש עיר כזו ויש לה ערים להצגה
+            //בדיקת תקינות שאכן יש עיר כזו ויש לה רחובות להצגה
             if (DB.ListCities.FirstOrDefault(a => a.idCity == _idCity) == null || DB.ListCities.FirstOrDefault(a => a.idCity == _idCity).MyStreets.Count == 0)
                 return null;
             return DB.ListCities.FirstOrDefault(a => a.idCity == _idCity).MyStreets;
