@@ -113,12 +113,13 @@ function OnClickSave() {
             cache: false
         }).done(function (Response) {
             debugger;
+            console.log(Response);
             if (Response.length > 0) {
-                const IdSelectCity = document.getElementById('IdSelectCity');
+                //const IdSelectCity = document.getElementById('IdSelectCity');
                 
-                    const OPTHION = document.createElement("option");
-                OPTHION.innerText = NameCityId;
-                    IdSelectCity.appendChild(OPTHION);
+                //    const OPTHION = document.createElement("option");
+                //OPTHION.innerText = NameCityId;
+                //    IdSelectCity.appendChild(OPTHION);
                 
                 alert("העיר נוספה בהצלחה")
             }
@@ -144,7 +145,7 @@ function OnClickSave() {
             }
 
             else
-                alert("הוספת שם הרחוב נכשלה בעקבות שקיים רחוב כזה כבר במאגר");
+                alert("הוספת הרחוב נכשלה כיוון שכבר קיים רחוב בשם זה במאגר");
         })
             .fail(function (Response) {
                 console.log(Response)
@@ -185,14 +186,14 @@ function OnClickSave() {
                             }
 
                             else
-                                alert("הוספת שם הרחוב נכשלה בעקבות שקיים רחוב כזה כבר בעיר זו");
+                                alert("הוספת הרחוב נכשלה כיוון שכבר קיים רחוב בשם זה בעיר זו");
                         })
                             .fail(function (Response) {
                                 console.log(Response)
                             });
                     }
                     else
-                        alert("הוספת שם הרחוב נכשלה בעקבות שקיים רחוב כזה כבר במאגר");
+                        alert("הוספת הרחוב נכשלה כיוון שכבר קיים רחוב בשם זה במאגר");
                 })
                     .fail(function (Response) {
                         console.log(Response)
@@ -200,7 +201,7 @@ function OnClickSave() {
             }
 
             else
-                alert("הוספת שם העיר נכשלה בעקבות שקיים עיר כזו כבר במאגר");
+                alert("הוספת העיר נכשלה כיוון שכבר קיים עיר בשם זה במאגר");
         })
             .fail(function (Response) {
                 console.log(Response)

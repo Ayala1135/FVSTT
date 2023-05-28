@@ -29,8 +29,15 @@ namespace DAL
         {
             //בדיקת תקינות האם קיים עיר בשם זה כבר
             if (DB.ListCities.FirstOrDefault(a => a.nameCity == nameNewCity) == null)
+            {
                 DB.ListCities.Add(new City(nameNewCity));
-            return DB.ListCities;
+                return DB.ListCities;
+
+            }
+                
+            //יש מצב שצריך לשנות פה: אם עדיין לא קיימת עיר כזו - להוסיף אותה ואז להחזיר את הרשימה, 
+            //ואם קיימת כבר עיר בשם הזה - להחזיר נל או משהו כדי שהרספונס בג'אווה סקריפט אורכו יהיה קטן מ0
+            return DB.ListCities/*null*/;
         }
 
 
